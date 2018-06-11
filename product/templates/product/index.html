@@ -1,0 +1,6 @@
+<img src="http://www.yaaritea.com/images/ctc/item-1.jpg">
+<ul>
+    {% for t in tea %}
+        <li><a href ="{% url 'detail' t.name %}">{{t.name}} </a> - Price {{t.price}}</li>
+    {% endfor %}
+</ul>
